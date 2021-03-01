@@ -5,7 +5,7 @@ import org.checkerframework.checker.units.qual.C;
 
 import java.util.List;
 
-public class AllergyIntolerence {
+public class AllergyIntolerance {
     public String resourceType;
     public String id;
     public Text text;
