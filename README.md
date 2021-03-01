@@ -17,10 +17,6 @@ and how the various parts of Event Builder correlate.
 - Events are structures that are meant to lift up the POJOs and provide them a specific structure. <br/>
 - Pojos are the data object meant to be leveraged for ANY data building or parsing activity.
 
-## POM Files
-This project also contains a POM file to pull in needed third party libraries. The needed library
-is for org.apache.commons and it is leveraged to help us return toString() for all the pojos we
-deliver.
 
 # Scenario: Integration
 You can leverage this repository once you have cloned the repository locally through a local Maven install.
