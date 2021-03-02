@@ -17,10 +17,6 @@ public class HL7RoutingEventParser {
 
 	private static final Logger LOG = LoggerFactory.getLogger(HL7RoutingEventParser.class);
 
-	public HL7RoutingEventParser() {
-
-	}
-
 	public RoutingEvent buildRoutingEvent(String body) {
 		RoutingEvent routingEvent = new RoutingEvent();
 

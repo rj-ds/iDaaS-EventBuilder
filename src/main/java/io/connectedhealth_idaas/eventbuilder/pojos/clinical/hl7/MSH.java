@@ -43,6 +43,8 @@ public class MSH {
                             .append(MSH_11_ProcessingID).append(MSH_1_FieldSeparator);
             }
             break;
+            default:
+                break;
         }
         return builder.toString();
     }
