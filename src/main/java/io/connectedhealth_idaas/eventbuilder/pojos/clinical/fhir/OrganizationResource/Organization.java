@@ -1,4 +1,4 @@
-package io.connectedhealth_idaas.eventbuilder.pojos.clinical.fhir;
+package io.connectedhealth_idaas.eventbuilder.pojos.clinical.fhir.OrganizationResource;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
