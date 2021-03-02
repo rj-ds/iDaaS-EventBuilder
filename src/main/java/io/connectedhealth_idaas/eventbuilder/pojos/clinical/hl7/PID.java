@@ -53,6 +53,8 @@ public class PID {
                          //.append(fieldDelimiter).append(EVN_6_EventOccurred).append(fieldDelimiter).append( EVN_7_EventFacility).append(fieldDelimiter);
             }
             break;
+            default:
+                break;
         }
         return builder.toString();
     }

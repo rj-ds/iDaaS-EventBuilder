@@ -5,9 +5,6 @@ import io.connectedhealth_idaas.eventbuilder.events.clinical.SepsisEvent;
 
 public class HL7SepsisEventParser {
 
-    public HL7SepsisEventParser() {
-    }
-
     public SepsisEvent buildSepsisEvent(String body) {
 
         SepsisEvent sepsisEvent = new SepsisEvent();

@@ -25,8 +25,8 @@ jobs:
         restore-keys: ${{ runner.os }}-sonar
     - name: Build and Verify
       run: mvn -B clean verify --fae --file pom.xml
-    - name: SonarCloud Scan
-      run: mvn sonar:sonar -Dsonar.login=${{ secrets.SONAR_TOKEN }} --fae --file pom.xml
-      env:
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    # - name: SonarCloud Scan
+    #   run: mvn sonar:sonar -Dsonar.login=${{ secrets.SONAR_TOKEN }} --fae --file pom.xml
+    #   env:
+    #     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
