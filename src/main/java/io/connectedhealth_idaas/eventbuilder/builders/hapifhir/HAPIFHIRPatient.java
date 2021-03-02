@@ -9,6 +9,10 @@ import io.connectedhealth_idaas.eventbuilder.builders.fhir.Patient;
 // https://hapifhir.io/hapi-fhir/docs/model/working_with_resources.html
 //https://hapifhir.io/hapi-fhir/apidocs/hapi-fhir-structures-r4/org/hl7/fhir/r4/model/package-summary.html
 public class HAPIFHIRPatient {
+
+    private HAPIFHIRPatient() {
+    }
+
     public static org.hl7.fhir.r4.model.Patient createPatient(io.connectedhealth_idaas.eventbuilder.builders.fhir.Patient patientData)
     {
         // Create a patient object
