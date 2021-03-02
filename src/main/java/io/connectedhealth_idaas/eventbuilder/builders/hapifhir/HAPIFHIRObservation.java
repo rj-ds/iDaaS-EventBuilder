@@ -1,10 +1,13 @@
 package io.connectedhealth_idaas.eventbuilder.builders.hapifhir;
 
-import ca.uhn.fhir.context.FhirContext;
-import ca.uhn.fhir.rest.client.api.IGenericClient;
-import org.hl7.fhir.r4.model.*;
+import org.hl7.fhir.r4.model.Observation;
+import org.hl7.fhir.r4.model.Quantity;
+import org.hl7.fhir.r4.model.Reference;
 
 public class HAPIFHIRObservation {
+
+    private HAPIFHIRObservation(){
+    }
 
     public static void createObservationObject() {
 
@@ -34,6 +37,4 @@ public class HAPIFHIRObservation {
         observationData.setSubject(new Reference("1234"));
 
     }
-
-
 }

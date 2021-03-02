@@ -1,10 +1,16 @@
 package io.connectedhealth_idaas.eventbuilder.builders.hapifhir;
 
+import org.hl7.fhir.r4.model.Address;
+import org.hl7.fhir.r4.model.Bundle;
+import org.hl7.fhir.r4.model.ContactPoint;
+import org.hl7.fhir.r4.model.Enumerations;
+import org.hl7.fhir.r4.model.IdType;
+import org.hl7.fhir.r4.model.Observation;
+import org.hl7.fhir.r4.model.Quantity;
+import org.hl7.fhir.r4.model.Reference;
+
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.rest.client.api.IGenericClient;
-import org.hl7.fhir.r4.model.*;
-// Import builder class for ease of usage
-import io.connectedhealth_idaas.eventbuilder.builders.fhir.Patient;
 
 // https://hapifhir.io/hapi-fhir/docs/model/working_with_resources.html
 //https://hapifhir.io/hapi-fhir/apidocs/hapi-fhir-structures-r4/org/hl7/fhir/r4/model/package-summary.html
