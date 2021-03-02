@@ -26,7 +26,7 @@ jobs:
     - name: Build and Verify
       run: mvn -B clean verify --fae --file pom.xml
     - name: SonarCloud Scan
-      run: mvn org.sonarsource.scanner.maven:sonar --fae --file pom.xml
+      run: mvn sonar:sonar --fae --file pom.xml
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
