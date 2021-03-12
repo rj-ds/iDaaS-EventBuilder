@@ -1,11 +1,11 @@
 package io.connectedhealth_idaas.eventbuilder.pojos.clinical.fhir.AllergyIntoleranceResource;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.checkerframework.checker.units.qual.C;
+
 
 import java.util.List;
 
-public class AllergyIntolerance {
+public class AllergyIntolerence {
     public String resourceType;
     public String id;
     public Text text;

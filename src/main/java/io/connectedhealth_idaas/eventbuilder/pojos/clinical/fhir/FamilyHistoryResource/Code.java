@@ -1,11 +1,15 @@
-package io.connectedhealth_idaas.eventbuilder.pojos.clinical.fhir.AllergyIntoleranceResource;
+package io.connectedhealth_idaas.eventbuilder.pojos.clinical.fhir.FamilyHistoryResource;
 
-import java.util.List;
+import io.connectedhealth_idaas.eventbuilder.pojos.clinical.fhir.AllergyIntoleranceResource.Coding;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
-public class ClinicalStatus {
+import java.util.List;
+
+
+public class Code {
 
     public List<Coding> coding;
+    public String text;
 
     public List<Coding> getCoding() {
         return coding;
@@ -14,6 +18,10 @@ public class ClinicalStatus {
     public void setCoding(List<Coding> coding) {
         this.coding = coding;
     }
+
+    public String getText(){return text;}
+
+    public void setText(String text){this.text=text;}
 
     public String toString()
     {
