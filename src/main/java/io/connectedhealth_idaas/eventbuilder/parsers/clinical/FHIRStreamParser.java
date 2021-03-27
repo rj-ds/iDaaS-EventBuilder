@@ -1,7 +1,7 @@
 package io.connectedhealth_idaas.eventbuilder.parsers.clinical;
 
 import io.connectedhealth_idaas.eventbuilder.events.platform.RoutingEvent;
-import io.connectedhealth_idaas.eventbuilder.pojos.clinical.fhir.AllergyIntoleranceResource.AllergyIntolerance;
+import io.connectedhealth_idaas.eventbuilder.pojos.clinical.fhir.AllergyIntoleranceResource.AllergyIntolerence;
 import io.connectedhealth_idaas.eventbuilder.pojos.clinical.fhir.AllergyIntoleranceResource.Note;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import com.google.gson.Gson;
@@ -21,10 +21,10 @@ public class FHIRStreamParser {
         public RoutingEvent buildRoutingEvent (String body){
             RoutingEvent routingEvent = new RoutingEvent();
             Gson gson = new Gson();
-            AllergyIntolerance allergy = new AllergyIntolerance();
+            AllergyIntolerence allergy = new AllergyIntolerence();
             UUID uuid = UUID.randomUUID();
             String uuidstr = uuid.toString();
-            allergy = gson.fromJson(body, AllergyIntolerance.class);
+            allergy = gson.fromJson(body, AllergyIntolerence.class);
             String messageTypeData = "AllergyIntolerence";
             String messageSendingDate = allergy.getRecordedDate();
             String messageSendingHour = allergy.getRecordedDate().substring(11, 13);

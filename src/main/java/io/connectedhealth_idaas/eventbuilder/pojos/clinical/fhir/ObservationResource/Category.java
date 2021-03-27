@@ -1,4 +1,4 @@
-package io.connectedhealth_idaas.eventbuilder.pojos.clinical.fhir.DiagnosticReportResource;
+package io.connectedhealth_idaas.eventbuilder.pojos.clinical.fhir.ObservationResource;
 
 import io.connectedhealth_idaas.eventbuilder.pojos.clinical.fhir.RiskAssessmentResource.Coding;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
@@ -15,7 +15,6 @@ public class Category {
 
     public String getText(){return text;}
     public void setText(String text){this.text=text;}
-
 
     public String toString()
     {
