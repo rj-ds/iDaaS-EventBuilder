@@ -2,7 +2,8 @@ package io.connectedhealth_idaas.eventbuilder.pojos.clinical.fhir.ProcedureResou
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
-public class Subject {
+public class Report {
+
     public String reference;
     public String display;
 

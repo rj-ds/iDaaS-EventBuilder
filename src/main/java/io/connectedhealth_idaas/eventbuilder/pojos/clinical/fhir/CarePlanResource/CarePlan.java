@@ -27,6 +27,15 @@ public class CarePlan {
     public List<Address> addresses;
     public List<Goal> goal;
     public List<Activity> activity;
+    public List<Extension> extension;
+    public List<Note> note;
+
+
+    public List<Note> getNote() { return note; }
+    public void setNote(List<Note> note) { this.note = note; }
+
+    public List<Extension> getExtension() { return extension; }
+    public void setExtension(List<Extension> extension) { this.extension = extension; }
 
     public Author getAuthor() { return author; }
     public void setAuthor(Author author) { this.author = author; }

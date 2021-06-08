@@ -2,7 +2,7 @@ package io.connectedhealth_idaas.eventbuilder.pojos.clinical.fhir.CarePlanResour
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
-public class Period {
+public class BoundsPeriod {
 
     public String start;
     public String end;
@@ -11,9 +11,9 @@ public class Period {
 
     public String getStart() { return start; }
 
-    public String getEnd() { return end; }
-
     public void setEnd(String end) { this.end = end; }
+
+    public String getEnd() { return end; }
 
     public String toString()
     {

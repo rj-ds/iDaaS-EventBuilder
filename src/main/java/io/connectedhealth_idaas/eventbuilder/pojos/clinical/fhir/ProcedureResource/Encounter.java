@@ -2,7 +2,7 @@ package io.connectedhealth_idaas.eventbuilder.pojos.clinical.fhir.ProcedureResou
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
-public class Subject {
+public class Encounter {
     public String reference;
     public String display;
 
@@ -16,4 +16,6 @@ public class Subject {
     {
         return ReflectionToStringBuilder.toString(this);
     }
+
+
 }

@@ -2,6 +2,8 @@ package io.connectedhealth_idaas.eventbuilder.pojos.clinical.fhir.CarePlanResour
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
+import java.util.List;
+
 public class Contained {
     public String resourceType;
     public String id;
@@ -9,6 +11,31 @@ public class Contained {
     public VerificationStatus verificationStatus;
     public Code code;
     public Subject subject;
+    public AchievementStatus achievementStatus;
+    public Description description;
+    public List<Participant> participant;
+    public String lifecycleStatus;
+    public List<Note> note;
+
+    public void setDescription(Description description) { this.description = description; }
+
+    public Description getDescription() { return description; }
+
+    public AchievementStatus getAchievementStatus() { return achievementStatus; }
+
+    public void setAchievementStatus(AchievementStatus achievementStatus) { this.achievementStatus = achievementStatus; }
+
+    public List<Note> getNote() { return note; }
+
+    public void setNote(List<Note> note) { this.note = note; }
+
+    public List<Participant> getParticipant() { return participant; }
+
+    public void setParticipant(List<Participant> participant) { this.participant = participant; }
+
+    public String getLifecycleStatus() { return lifecycleStatus; }
+
+    public void setLifecycleStatus(String lifecycleStatus) { this.lifecycleStatus = lifecycleStatus; }
 
     public ClinicalStatus getClinicalStatus() { return clinicalStatus; }
 

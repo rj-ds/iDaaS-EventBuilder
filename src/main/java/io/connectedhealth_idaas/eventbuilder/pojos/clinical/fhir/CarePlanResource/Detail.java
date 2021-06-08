@@ -2,6 +2,7 @@ package io.connectedhealth_idaas.eventbuilder.pojos.clinical.fhir.CarePlanResour
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
+import java.util.Date;
 import java.util.List;
 
 public class Detail {
@@ -12,6 +13,16 @@ public class Detail {
     public ScheduledTiming scheduledTiming;
     public Location location;
     public List<Performer> performer;
+    public Date scheduledString;
+    public String kind;
+
+    public String getKind() { return kind; }
+
+    public void setKind(String kind) { this.kind = kind; }
+
+    public Date getScheduledString() { return scheduledString; }
+
+    public void setScheduledString(Date scheduledString) { this.scheduledString = scheduledString; }
 
     public boolean isDoNotPerform() { return doNotPerform; }
 
