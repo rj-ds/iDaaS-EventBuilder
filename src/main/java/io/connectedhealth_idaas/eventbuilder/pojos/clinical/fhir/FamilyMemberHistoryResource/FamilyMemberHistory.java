@@ -2,6 +2,7 @@ package io.connectedhealth_idaas.eventbuilder.pojos.clinical.fhir.FamilyMemberHi
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
+import java.util.Date;
 import java.util.List;
 
 public class FamilyMemberHistory {
@@ -17,6 +18,23 @@ public class FamilyMemberHistory {
     public Relationship relationship;
     public Sex sex;
     public List<Condition> condition;
+    public Boolean estimatedAge;
+    public ReasonCode reasonCode;
+    public Outcome outcome;
+    public Date bornDate;
+    public int age;
+
+    public Date getBornDate() { return bornDate; }
+    public void setBornDate(Date bornDate) { this.bornDate = bornDate; }
+
+    public Outcome getOutcome() { return outcome; }
+    public void setOutcome(Outcome outcome) { this.outcome = outcome; }
+
+    public ReasonCode getReasonCode() { return reasonCode; }
+    public void setReasonCode(ReasonCode reasonCode) { this.reasonCode = reasonCode; }
+
+    public Boolean getEstimatedAge() { return estimatedAge; }
+    public void setEstimatedAge(Boolean estimatedAge) { this.estimatedAge = estimatedAge; }
 
     public Text getText() { return text; }
     public void setText(Text text) { this.text = text; }

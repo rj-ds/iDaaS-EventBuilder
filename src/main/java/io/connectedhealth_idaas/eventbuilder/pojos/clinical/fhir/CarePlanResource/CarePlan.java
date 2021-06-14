@@ -11,6 +11,7 @@ public class CarePlan {
     public List<Contained> contained;
     public List<Identifier> identifier;
     public List<String> instantiatesUri;
+    public List<String> instantiatesCanonical;
     public List<BasedOn> basedOn;
     public List<Replace> replaces;
     public List<PartOf> partOf;
@@ -23,13 +24,27 @@ public class CarePlan {
     public Period period;
     public String created;
     public Author author;
+    public Contributor contributor;
     public List<CareTeam> careTeam;
+    public List<SupportingInfo> supportingInfo;
     public List<Address> addresses;
     public List<Goal> goal;
     public List<Activity> activity;
     public List<Extension> extension;
     public List<Note> note;
+    public String title;
 
+    public List<SupportingInfo> getSupportingInfo() { return supportingInfo; }
+    public void setSupportingInfo(List<SupportingInfo> supportingInfo) { this.supportingInfo = supportingInfo; }
+
+    public Contributor getContributor() { return contributor; }
+    public void setContributor(Contributor contributor) { this.contributor = contributor; }
+
+    public String getTitle() { return title; }
+    public void setTitle(String title) { this.title = title; }
+
+    public List<String> getInstantiatesCanonical() { return instantiatesCanonical; }
+    public void setInstantiatesCanonical(List<String> instantiatesCanonical) { this.instantiatesCanonical = instantiatesCanonical; }
 
     public List<Note> getNote() { return note; }
     public void setNote(List<Note> note) { this.note = note; }

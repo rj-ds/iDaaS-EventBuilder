@@ -15,10 +15,34 @@ public class AdverseEvent {
      public Event event;
      public Subject subject;
      public Date date;
+     public Date detected;
+     public Date recordedDate;
      public Seriousness seriousness;
      public Severity severity;
      public Recorder recorder;
      public List<SuspectEntity> suspectEntity;
+     public Outcome outcome;
+     public Location location;
+     public List<Causality> causalities;
+     public String study;
+
+    public String getStudy() { return study; }
+    public void setStudy(String study) { this.study = study; }
+
+    public List<Causality> getCausalities() { return causalities; }
+    public void setCausalities(List<Causality> causalities) { this.causalities = causalities; }
+
+    public Location getLocation() { return location; }
+    public void setLocation(Location location) { this.location = location; }
+
+    public Date getDetected() { return detected; }
+    public void setDetected(Date detected) { this.detected = detected; }
+
+    public Date getRecordedDate() { return recordedDate; }
+    public void setRecordedDate(Date recordedDate) { this.recordedDate = recordedDate; }
+
+    public Outcome getOutcome() { return outcome; }
+    public void setOutcome(Outcome outcome) { this.outcome = outcome; }
 
     public Text getText() { return text; }
     public void setText(Text text) { this.text = text; }
