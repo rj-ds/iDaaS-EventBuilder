@@ -1,8 +1,8 @@
-package io.connectedhealth_idaas.eventbuilder.pojos.clinical.fhir.MedicationDispenseResource;
+package io.connectedhealth_idaas.eventbuilder.pojos.clinical.fhir.MedicationRequestResource;
 
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
-public class High {
+public class DoseQuantity {
     public int value;
     public String unit;
     public String system;
@@ -28,6 +28,5 @@ public class High {
     {
         return ReflectionToStringBuilder.toString(this);
     }
-
 
 }

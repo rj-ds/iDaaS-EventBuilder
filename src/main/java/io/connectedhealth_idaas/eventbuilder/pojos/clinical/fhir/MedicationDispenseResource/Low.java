@@ -1,5 +1,7 @@
 package io.connectedhealth_idaas.eventbuilder.pojos.clinical.fhir.MedicationDispenseResource;
 
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+
 public class Low {
     public int value;
     public String unit;
@@ -21,4 +23,10 @@ public class Low {
     public String getUnit() { return unit; }
 
     public void setUnit(String unit) { this.unit = unit; }
+
+    public String toString()
+    {
+        return ReflectionToStringBuilder.toString(this);
+    }
+
 }
